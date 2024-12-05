@@ -61,28 +61,7 @@ function RootLayoutNav() {
       <StatusBar
         barStyle={colorScheme === "dark" ? "light-content" : "dark-content"}
       />
-      <Stack>
-        <Stack.Screen
-          name="(tabs)"
-          options={{
-            headerShown: false,
-          }}
-        />
-
-        <Stack.Screen
-          name="modal"
-          options={{
-            title: "Tamagui + Expo",
-            presentation: "modal",
-            animation: "slide_from_right",
-            gestureEnabled: true,
-            gestureDirection: "horizontal",
-            contentStyle: {
-              backgroundColor: theme.background.val,
-            },
-          }}
-        />
-      </Stack>
+      <Stack />
     </ThemeProvider>
   );
 }
